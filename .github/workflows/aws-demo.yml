@@ -42,8 +42,7 @@ jobs:
           aws s3 ls s3://my-test-bucket2532
       - name: Get object
         run: |
-          aws s3 GetObject 
-          aws s3api get-object --bucket my-test-bucket2532 --key AdmitCard_1736648.pdf /tmp/
+          aws s3 cp s3://my-test-bucket2532/AdmitCard_1736648.pdf /tmp/testget.pdf
 
 
           
