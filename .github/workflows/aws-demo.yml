@@ -39,5 +39,8 @@ jobs:
           aws s3 ls
       - name: List files
         run: |
-          aws s3 ls s3://my-test-bucket2532   
+          aws s3 ls s3://my-test-bucket2532
+      - name: Get object
+        run: |
+          aws s3 GetObject 
           
