@@ -43,4 +43,8 @@ jobs:
       - name: Get object
         run: |
           aws s3 GetObject 
+          aws s3api get-object --bucket my-test-bucket2532 --key AdmitCard_1736648.pdf /tmp/
+
+
+          
           
